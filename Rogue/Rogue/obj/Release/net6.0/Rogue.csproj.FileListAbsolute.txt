@@ -1,0 +1,15 @@
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\Rogue.exe
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\Rogue.deps.json
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\Rogue.runtimeconfig.json
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\Rogue.dll
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\Rogue.pdb
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.csproj.AssemblyReference.cache
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.AssemblyInfoInputs.cache
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.AssemblyInfo.cs
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.csproj.CoreCompileInputs.cache
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.dll
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\refint\Rogue.dll
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.pdb
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.genruntimeconfig.cache
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\ref\Rogue.dll
