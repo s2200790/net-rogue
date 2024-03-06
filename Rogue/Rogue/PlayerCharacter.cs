@@ -46,5 +46,12 @@ namespace Rogue
             X += moveX;
             Y += moveY;
         }
+
+        public void Draw()
+        {
+            Console.SetCursorPosition(X, Y);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("P");
+        }
     }
 }

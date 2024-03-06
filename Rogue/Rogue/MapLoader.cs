@@ -20,7 +20,7 @@ namespace Rogue
                 2, 1, 1, 1, 1, 1, 1, 2,
                 2, 2, 2, 2, 2, 2, 2, 2 };
 
-            return new Map(mapWidth, mapTiles);
+            return new Map(mapWidth, mapTiles.Length / mapWidth, mapTiles);
         }
     }
 }
