@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
+using System.IO.MemoryMappedFiles;
 using System.Linq;
 using System.Numerics;
 using System.Reflection.Emit;
@@ -16,27 +18,78 @@ namespace Rogue
 
         private void CreatePlayer()
         {
-            Console.WriteLine("Enter your name:");
-            string name = Console.ReadLine();
-
-            if (!IsValidName(name))
+            string name;
+            while (true)
             {
-                Console.WriteLine("Name cannot contain digits or spaces.");
-                CreatePlayer();
-                return;
+                Console.WriteLine("Enter your name:");
+                name = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(name) || name.Any(char.IsDigit) || name.Contains(" "))
+                {
+                    Console.WriteLine("Invalid name. Name cannot contain digits or spaces.");
+                    continue;
+                }
+                break;
             }
+            Species species;
+            while (true)
+            {
+                Console.WriteLine("Choose your species:");
+                Console.WriteLine("1. Duck");
+                Console.WriteLine("2. Mongoose");
+                Console.WriteLine("3. Elf");
+                string vastaus = Console.ReadLine();
 
-            Console.WriteLine("Choose your species:");
-            Console.WriteLine("1. Duck");
-            Console.WriteLine("2. Mongoose");
-            Console.WriteLine("3. Elf");
-            Species species = (Species)(int.Parse(Console.ReadLine()) - 1);
+                int SpeciesNumber = -1; // Init to invalid value
+                                        // Try to parse the answer as a number
+                string[] raceNames = Enum.GetNames(typeof(Species));
+                if (int.TryParse(vastaus, out SpeciesNumber))
+                {
+                    // Check that the number is within correct range: 1-3
+                    if (SpeciesNumber >= 1 && SpeciesNumber <= raceNames.Length)
+                    {
+                        // Remember to -1 to get the index
+                        // Parse the chosen name as Species enum
+                        species = Enum.Parse<Species>(raceNames[SpeciesNumber - 1]);
+                        break;
+                    }
+                }
 
-            Console.WriteLine("Choose your role:");
-            Console.WriteLine("1. Cook");
-            Console.WriteLine("2. Smith");
-            Console.WriteLine("3. Rogue");
-            Role role = (Role)(int.Parse(Console.ReadLine()) - 1);
+                if (!Enum.TryParse(vastaus, out species))
+                {
+                    Console.WriteLine("Invalid species.");
+                    continue;
+                }
+            }
+            Role role;
+            while (true)
+            {
+
+                Console.WriteLine("Choose your role:");
+                Console.WriteLine("1. Cook");
+                Console.WriteLine("2. Smith");
+                Console.WriteLine("3. Rogue");
+                string vastaus = Console.ReadLine();
+
+                int RoleNumber = -1; // Init to invalid value
+                                        // Try to parse the answer as a number
+                string[] raceNames = Enum.GetNames(typeof(Role));
+                if (int.TryParse(vastaus, out RoleNumber))
+                {
+                    // Check that the number is within correct range: 1-3
+                    if (RoleNumber >= 1 && RoleNumber <= raceNames.Length)
+                    {
+                        // Remember to -1 to get the index
+                        // Parse the chosen name as Role enum
+                        role = Enum.Parse<Role>(raceNames[RoleNumber - 1]);
+                        break;
+                    }
+                }
+                
+                    Console.WriteLine("Invalid role.");
+                    continue;
+                
+            }
 
             player = new PlayerCharacter(name, species, role);
             Console.Clear();
@@ -45,44 +98,14 @@ namespace Rogue
             Console.Clear();
         }
 
-        private bool IsValidName(string name)
-        {
-            return !name.Any(char.IsDigit) && !name.Contains(" ");
-        }
-
         private void DrawMap()
         {
-            Console.ForegroundColor = ConsoleColor.Gray; // Change to map color
-
-            for (int y = 0; y < level01.MapHeight; y++) // for each row
-            {
-                for (int x = 0; x < level01.MapWidth; x++) // for each column in the row
-                {
-                    int index = x + y * level01.MapWidth; // Calculate index of tile at (x, y)
-                    int tileId = level01.MapTiles[index]; // Read the tile value at index
-
-                    // Draw the tile graphics
-                    Console.SetCursorPosition(x, y);
-                    switch (tileId)
-                    {
-                        case 1:
-                            Console.Write("."); // Floor
-                            break;
-                        case 2:
-                            Console.Write("#"); // Wall
-                            break;
-                        default:
-                            Console.Write(" ");
-                            break;
-                    }
-                }
-            }
+            level01.Draw();
         }
 
         private void DrawPlayer()
         {
-            Console.SetCursorPosition(player.X, player.Y);
-            Console.Write("@");
+            player.Draw();
         }
 
         private void HandleInput(ConsoleKeyInfo keyInfo)
@@ -120,8 +143,7 @@ namespace Rogue
 
         private bool IsTileWalkable(int x, int y)
         {
-            int tileId = level01.GetTileAt(x, y);
-            return tileId == 1; // Assuming tileId 1 represents a walkable floor
+            return level01.GetTileAt(x, y) == 1; 
         }
 
         public void Run()
@@ -129,7 +151,9 @@ namespace Rogue
             CreatePlayer();
 
             MapLoader loader = new MapLoader();
-            level01 = loader.LoadTestMap();
+            level01 = loader.ReadMapFromFile("mapfile.json");
+
+            loader.TestFileReading("mapfile.json");
 
             Console.Clear();
             DrawMap();

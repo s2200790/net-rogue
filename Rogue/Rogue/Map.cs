@@ -8,37 +8,37 @@ namespace Rogue
 {
     internal class Map
     {
-        public int MapWidth { get; }
-        public int MapHeight { get; }
-        public int[] MapTiles { get; }
+        public int mapWidth { get; set; }
+        public int MapHeight { get; set; }
+        public int[] mapTiles { get; set; }
 
         public Map(int width, int height, int[] tiles)
         {
-            MapWidth = width;
+            mapWidth = width;
             MapHeight = height;
-            MapTiles = tiles;
+            mapTiles = tiles;
         }
 
         public int GetTileAt(int x, int y)
         {
-            if (x < 0 || x >= MapWidth || y < 0 || y >= MapHeight)
-                return 0; // Out of bounds
+            if (x < 0 || x >= mapWidth || y < 0 || y >= MapHeight)
+                return 0; 
 
-            return MapTiles[x + y * MapWidth];
+            return mapTiles[x + y * mapWidth];
         }
 
         public void Draw()
         {
-            Console.ForegroundColor = ConsoleColor.Gray; // Change to map color
+            Console.ForegroundColor = ConsoleColor.Gray; 
 
-            for (int y = 0; y < MapHeight; y++) // for each row
+            for (int y = 0; y < MapHeight; y++) 
             {
-                for (int x = 0; x < MapWidth; x++) // for each column in the row
+                for (int x = 0; x < mapWidth; x++) 
                 {
-                    int index = x + y * MapWidth; // Calculate index of tile at (x, y)
-                    int tileId = MapTiles[index]; // Read the tile value at index
+                    int index = x + y * mapWidth; 
+                    int tileId = mapTiles[index]; 
 
-                    // Draw the tile graphics
+                    
                     Console.SetCursorPosition(x, y);
                     switch (tileId)
                     {
@@ -46,7 +46,7 @@ namespace Rogue
                             Console.Write("."); // Floor
                             break;
                         case 2:
-                            Console.Write("#"); // Wall
+                            Console.Write("#");
                             break;
                         default:
                             Console.Write(" ");

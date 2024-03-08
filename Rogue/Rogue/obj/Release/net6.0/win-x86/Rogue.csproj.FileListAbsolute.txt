@@ -237,3 +237,5 @@ C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x86\refint\Rogue.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x86\Rogue.pdb
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x86\Rogue.genruntimeconfig.cache
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x86\ref\Rogue.dll
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\mapfile.json
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\Newtonsoft.Json.dll

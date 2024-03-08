@@ -1,2 +1,3 @@
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Rogue.pdb
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\mapfile.json
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Rogue.exe

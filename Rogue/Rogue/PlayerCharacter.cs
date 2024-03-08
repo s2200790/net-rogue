@@ -37,8 +37,8 @@ namespace Rogue
             Name = name;
             Species = species;
             Role = role;
-            X = 1; // Starting X position
-            Y = 1; // Starting Y position
+            X = 1; 
+            Y = 1; 
         }
 
         public void Move(int moveX, int moveY)

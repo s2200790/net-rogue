@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tJrgM2cELNULGyUMKNw5Q4T2OXQrYNmrFZO5e76M0q7ZNLf/372tzBwSCXRW0thrZ5dyJHR4Qpu1OT1abTRYwQ==",
+  "dgSpecHash": "RJBIDNYW0A+pgIefruRAQRe1dzdojyrBL/MErS4ASQzgfn4G5eLVLcRwWphwCMeR7Cz0JAAjtIm93ptIhjixbw==",
   "success": true,
   "projectFilePath": "C:\\Tiedostot\\net-rogue\\Rogue\\Rogue\\Rogue.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\s2200790\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\s2200790\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.13\\microsoft.netcore.app.runtime.win-x86.6.0.13.nupkg.sha512",
     "C:\\Users\\s2200790\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.13\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.13.nupkg.sha512",
     "C:\\Users\\s2200790\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.13\\microsoft.aspnetcore.app.runtime.win-x86.6.0.13.nupkg.sha512"
