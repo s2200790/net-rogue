@@ -1,0 +1,15 @@
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\bin\Debug\net7.0\GetStartedDebugging.exe
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\bin\Debug\net7.0\GetStartedDebugging.deps.json
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\bin\Debug\net7.0\GetStartedDebugging.runtimeconfig.json
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\bin\Debug\net7.0\GetStartedDebugging.dll
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\bin\Debug\net7.0\GetStartedDebugging.pdb
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\obj\Debug\net7.0\GetStartedDebugging.csproj.AssemblyReference.cache
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\obj\Debug\net7.0\GetStartedDebugging.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\obj\Debug\net7.0\GetStartedDebugging.AssemblyInfoInputs.cache
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\obj\Debug\net7.0\GetStartedDebugging.AssemblyInfo.cs
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\obj\Debug\net7.0\GetStartedDebugging.csproj.CoreCompileInputs.cache
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\obj\Debug\net7.0\GetStartedDebugging.dll
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\obj\Debug\net7.0\refint\GetStartedDebugging.dll
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\obj\Debug\net7.0\GetStartedDebugging.pdb
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\obj\Debug\net7.0\GetStartedDebugging.genruntimeconfig.cache
+C:\Tiedostot\net-rogue\GetStartedDebugging\GetStartedDebugging\obj\Debug\net7.0\ref\GetStartedDebugging.dll

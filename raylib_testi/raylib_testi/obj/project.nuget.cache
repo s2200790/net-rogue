@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fjocn7X0g67SNi2Qc1LM13SlIyjL9pFb7+mfpHn32zWiJCx73HUhEobJA0H/aMo8TNAO8mxMjtRJOtZaFHfm1g==",
+  "success": true,
+  "projectFilePath": "C:\\Tiedostot\\net-rogue\\raylib_testi\\raylib_testi\\raylib_testi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\s2200790\\.nuget\\packages\\communitytoolkit.highperformance\\8.1.0\\communitytoolkit.highperformance.8.1.0.nupkg.sha512",
+    "C:\\Users\\s2200790\\.nuget\\packages\\raylib-csharp-vinculum\\5.0.1\\raylib-csharp-vinculum.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

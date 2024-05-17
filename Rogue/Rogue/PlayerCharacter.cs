@@ -51,7 +51,7 @@ namespace Rogue
         {
             Console.SetCursorPosition(X, Y);
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("P");
+            Console.Write("@");
         }
     }
 }

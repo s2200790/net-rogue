@@ -1,0 +1,91 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Rogue/Rogue/Map/NewRogueMap.tmj",
+    "expandedProjectPaths": [
+        ".",
+        "Rogue/Rogue/Map",
+        "Rogue/Rogue/bin/Release",
+        "Rogue/Rogue/obj",
+        "Rogue",
+        "Rogue/Rogue"
+    ],
+    "fileStates": {
+        "DungeonTile.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1.5
+        },
+        "Dungeon_Tileset-Rogue.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        },
+        "Rogue/Rogue/Map/DungeonTile.tsx": {
+            "scaleInDock": 1
+        },
+        "Rogue/Rogue/Map/Dungeon_Tileset-Rogue.tsx": {
+            "scaleInDock": 1
+        },
+        "Rogue/Rogue/Map/FixedMap.tmj": {
+            "scale": 2.0662499999999997,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.29038112522687,
+                "y": 160.4355716878403
+            }
+        },
+        "Rogue/Rogue/Map/NewRogueMap.tmj": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 231.75,
+                "y": 158.25
+            }
+        },
+        "Rogue/Rogue/Map/RogueMap.tmj": {
+            "scale": 1.805,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.61218836565098,
+                "y": 159.83379501385045
+            }
+        },
+        "untitled.tmx": {
+            "scale": 2.0662499999999997,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 239.80641258318212,
+                "y": 158.25771324863885
+            }
+        }
+    },
+    "last.exportedFilePath": "C:/Tiedostot/net-rogue",
+    "last.externalTilesetPath": "C:/Tiedostot/net-rogue",
+    "last.imagePath": "C:/Tiedostot/net-rogue",
+    "lastUsedTilesetExportFilter": "JSON tileset files (*.tsj *.json)",
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "json",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "openFiles": [
+        "Dungeon_Tileset-Rogue.tsx",
+        "Rogue/Rogue/Map/NewRogueMap.tmj",
+        "DungeonTile.tsx"
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "Dungeon_Tileset-Rogue.tsx",
+        "DungeonTile.tsx",
+        "Rogue/Rogue/Map/NewRogueMap.tmj",
+        "Rogue/Rogue/Map/RogueMap.tmj",
+        "Rogue/Rogue/Map/FixedMap.tmj",
+        "untitled.tmx"
+    ],
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
