@@ -245,6 +245,10 @@ namespace Rogue
                 {
                     player.Move(moveX, moveY);
                 }
+                else
+                {
+                    Console.WriteLine("Vihollinen");
+                }
             }
         }
 
