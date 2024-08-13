@@ -1,3 +1,11 @@
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Rogue.pdb
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\mapfile.json
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Images\DungeonTile.png
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\DungeonTile.png
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\DungeonTile.tsj
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\DungeonTile.tsx
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\Dungeon_Tileset-Rogue..tsj
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\Dungeon_Tileset-Rogue.tsx
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\Dungeon_Tileset.png
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\RogueMap.tmj
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Rogue.exe

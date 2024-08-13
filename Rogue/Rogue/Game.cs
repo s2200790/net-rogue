@@ -241,7 +241,10 @@ namespace Rogue
 
             if (IsTileWalkable(newX, newY))
             {
-                player.Move(moveX, moveY);
+                if ((newX, newY) != (enemyX, enemyY))
+                {
+                    player.Move(moveX, moveY);
+                }
             }
         }
 

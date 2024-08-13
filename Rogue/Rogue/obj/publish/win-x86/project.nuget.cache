@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RJBIDNYW0A+pgIefruRAQRe1dzdojyrBL/MErS4ASQzgfn4G5eLVLcRwWphwCMeR7Cz0JAAjtIm93ptIhjixbw==",
+  "dgSpecHash": "mMG9JoCXg9OdIqDOPZroHCB0xnMWXtJKuYb9j3wAQ58UJID8pPSMRU55k3pZow3LjzQWaCnV6uRSq6J9S5+0Yg==",
   "success": true,
   "projectFilePath": "C:\\Tiedostot\\net-rogue\\Rogue\\Rogue\\Rogue.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\s2200790\\.nuget\\packages\\communitytoolkit.highperformance\\8.1.0\\communitytoolkit.highperformance.8.1.0.nupkg.sha512",
     "C:\\Users\\s2200790\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\s2200790\\.nuget\\packages\\raylib-csharp-vinculum\\5.0.1\\raylib-csharp-vinculum.5.0.1.nupkg.sha512",
     "C:\\Users\\s2200790\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.13\\microsoft.netcore.app.runtime.win-x86.6.0.13.nupkg.sha512",
     "C:\\Users\\s2200790\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.13\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.13.nupkg.sha512",
     "C:\\Users\\s2200790\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.13\\microsoft.aspnetcore.app.runtime.win-x86.6.0.13.nupkg.sha512"

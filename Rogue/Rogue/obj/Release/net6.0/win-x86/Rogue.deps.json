@@ -10,6 +10,7 @@
       "Rogue/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
+          "Raylib-CSharp-Vinculum": "5.0.1",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x86": "6.0.13"
         },
         "runtime": {
@@ -131,6 +132,10 @@
             "fileVersion": "6.0.1322.58009"
           },
           "System.Net.Sockets.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1322.58009"
+          },
+          "System.Numerics.Vectors.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.1322.58009"
           },
@@ -261,6 +266,18 @@
           "System.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "6.0.1322.58009"
+          },
+          "netstandard.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "6.0.1322.58009"
+          }
+        }
+      },
+      "CommunityToolkit.HighPerformance/8.1.0": {
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.HighPerformance.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.1.0.1"
           }
         }
       },
@@ -269,6 +286,17 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.3.27908"
+          }
+        }
+      },
+      "Raylib-CSharp-Vinculum/5.0.1": {
+        "dependencies": {
+          "CommunityToolkit.HighPerformance": "8.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Raylib-CSharp-Vinculum.dll": {
+            "assemblyVersion": "5.0.1.0",
+            "fileVersion": "5.0.1.0"
           }
         }
       }
@@ -285,12 +313,26 @@
       "serviceable": false,
       "sha512": ""
     },
+    "CommunityToolkit.HighPerformance/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kgDi65k02hrgnHy3N0xENecsr0spW13RdIA1tipovi9t16gKziI7uZIu3qkxz0GctCHNM4hfeqXYg//6wHJ6Kw==",
+      "path": "communitytoolkit.highperformance/8.1.0",
+      "hashPath": "communitytoolkit.highperformance.8.1.0.nupkg.sha512"
+    },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "Raylib-CSharp-Vinculum/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g21BSSFWohdtUohpo3PW7ZHt7EGZ1+qssg3uWoHy5cnJtsPNNoMjzeyX+xOGM6HEi3JhlzPZFJ2+qojuFPXP5A==",
+      "path": "raylib-csharp-vinculum/5.0.1",
+      "hashPath": "raylib-csharp-vinculum.5.0.1.nupkg.sha512"
     }
   },
   "runtimes": {

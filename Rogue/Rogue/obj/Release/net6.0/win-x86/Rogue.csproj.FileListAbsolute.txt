@@ -239,3 +239,13 @@ C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x86\Rogue.genruntimeco
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x86\ref\Rogue.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\mapfile.json
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\Newtonsoft.Json.dll
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\Images\DungeonTile.png
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\Map\DungeonTile.png
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\Map\DungeonTile.tsj
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\Map\DungeonTile.tsx
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\Map\Dungeon_Tileset-Rogue..tsj
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\Map\Dungeon_Tileset-Rogue.tsx
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\Map\Dungeon_Tileset.png
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\Map\RogueMap.tmj
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\CommunityToolkit.HighPerformance.dll
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x86\Raylib-CSharp-Vinculum.dll
