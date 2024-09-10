@@ -3,14 +3,14 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Rogue/Rogue/Map/NewRogueMap.tmj",
+    "activeFile": "DungeonTile.tsx",
     "expandedProjectPaths": [
         ".",
+        "Rogue/Rogue",
         "Rogue/Rogue/Map",
         "Rogue/Rogue/bin/Release",
-        "Rogue/Rogue/obj",
         "Rogue",
-        "Rogue/Rogue"
+        "Rogue/Rogue/obj"
     ],
     "fileStates": {
         "DungeonTile.tsx": {
@@ -39,8 +39,8 @@
             "scale": 2,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 231.75,
-                "y": 158.25
+                "x": 231.25,
+                "y": 157.75
             }
         },
         "Rogue/Rogue/Map/RogueMap.tmj": {
@@ -76,8 +76,8 @@
     "project": "untitled.tiled-project",
     "recentFiles": [
         "Dungeon_Tileset-Rogue.tsx",
-        "DungeonTile.tsx",
         "Rogue/Rogue/Map/NewRogueMap.tmj",
+        "DungeonTile.tsx",
         "Rogue/Rogue/Map/RogueMap.tmj",
         "Rogue/Rogue/Map/FixedMap.tmj",
         "untitled.tmx"

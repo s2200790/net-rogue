@@ -7,5 +7,7 @@ C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\Dungeo
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\Dungeon_Tileset-Rogue..tsj
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\Dungeon_Tileset-Rogue.tsx
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\Dungeon_Tileset.png
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\NewRogueMap.tmj
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Map\RogueMap.tmj
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\TurboMapReader.pdb
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\publish\win-x86\Rogue.exe

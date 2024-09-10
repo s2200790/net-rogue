@@ -5,7 +5,7 @@ using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-// using TurboMapReader;
+using TurboMapReader;
 
 namespace Rogue
 {
@@ -48,51 +48,50 @@ namespace Rogue
                 }
             }
         }
-        //public Map LoadMapFromTiledFile(string filename)
-        //{
-            //TiledMap loadedTileMap = TurboMapReader.MapReader.LoadMapFromFile(filename);
-            
-            //if (loadedTileMap != null)
-            //{
-                //Console.WriteLine($"Loaded TileMap {loadedTileMap}");
-                //int mapWidth = loadedTileMap.width;
-                //int mapHeight = loadedTileMap.height;
-                //List<int> mapTiles = new List<int>();
+        public Map LoadMapFromTiledFile(string filename)
+        {
+            TiledMap loadedTileMap = TurboMapReader.MapReader.LoadMapFromFile(filename);
 
-                //foreach (TurboMapReader.MapLayer layer in loadedTileMap.layers)
-                //{
-                //    foreach (int tile in layer.data)
-                  //  {
-                //        mapTiles.Add(tile - 1);
-                //    }
-              //  }
-                //Map loadedMap = new Map(mapWidth, mapHeight, mapTiles.ToArray());
-                
-                //return loadedMap;
-            //}
-            //return null;
-        //}
-            public Map ReadMapFromFile(string filename)
+            if (loadedTileMap != null)
             {
-                bool exists = File.Exists(filename);
-                if (exists == false)
+                Console.WriteLine($"Loaded TileMap {loadedTileMap}");
+                int mapWidth = loadedTileMap.width;
+                int mapHeight = loadedTileMap.height;
+                List<int> mapTiles = new List<int>();
+                TurboMapReader.MapLayer Floor = loadedTileMap.GetLayerByName("Floor");
                 {
-                    Console.WriteLine($"File {filename} not found");
-                    return LoadTestMap();
+                    foreach (int tile in Floor.data)
+                    {
+                        mapTiles.Add(tile);
+                    }
                 }
+                Map loadedMap = new Map(mapWidth, mapHeight, mapTiles.ToArray());
 
-                string fileContents;
-
-
-                using (StreamReader reader = File.OpenText(filename))
-                {
-                    fileContents = reader.ReadToEnd();
-
-                }
-
-                Map loadedMap = JsonConvert.DeserializeObject<Map>(fileContents);
-                loadedMap.MapHeight = loadedMap.mapTiles.Length / loadedMap.mapWidth;
                 return loadedMap;
             }
+            return null;
+        }
+        //public Map ReadMapFromFile(string filename)
+        //    {
+        //        bool exists = File.Exists(filename);
+        //        if (exists == false)
+        //        {
+        //            Console.WriteLine($"File {filename} not found");
+        //            return LoadTestMap();
+        //        }
+
+        //        string fileContents;
+
+
+        //        using (StreamReader reader = File.OpenText(filename))
+        //        {
+        //            fileContents = reader.ReadToEnd();
+
+        //        }
+
+        //        Map loadedMap = JsonConvert.DeserializeObject<Map>(fileContents);
+        //        loadedMap.MapHeight = loadedMap.mapTiles.Length / loadedMap.mapWidth;
+        //        return loadedMap;
+        //    }
         }
     }

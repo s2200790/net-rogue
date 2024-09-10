@@ -34,6 +34,7 @@ namespace Rogue
         int itemX = 0;
         int itemY = 0;
 
+        public static List<int> FloorTileNumbers;
         private void CreatePlayer()
         {
             string name;
@@ -124,26 +125,27 @@ namespace Rogue
         private void Init()
         {
             MapLoader loader = new MapLoader();
-            level01 = loader.ReadMapFromFile("mapfile.json");
+            level01 = loader.LoadMapFromTiledFile("Map/NewRogueMap.tmj");
 
             Raylib.InitWindow(screen_width, screen_height, "Rogue");
             Raylib.SetWindowState(ConfigFlags.FLAG_WINDOW_RESIZABLE);
-            game_width = 8 * 16;
-            game_height = 7 * 16;
+            game_width = 16 * 16;
+            game_height = 14 * 16;
             Raylib.SetWindowMinSize(game_width, game_height);
             game_screen = Raylib.LoadRenderTexture(game_width, game_height);
             Raylib.SetTextureFilter(game_screen.texture, TextureFilter.TEXTURE_FILTER_POINT);
             Raylib.SetTargetFPS(30);
             atlas = Raylib.LoadTexture("Map/Dungeon_Tileset.png");
             hahmoAtlas = Raylib.LoadTexture("Images/DungeonTile.png");
+            
         }
 
         private void DrawGameToTexture()
         {
             Raylib.BeginTextureMode(game_screen);
             Raylib.ClearBackground(Raylib.RAYWHITE);
-            int KenttäX = 16;
-            int KenttäY = 16;
+            int KenttäX = 0;// 16;
+            int KenttäY = 0;// 16;
             int KenttäTilesPerRow = 10;
             int KenttäTileSize = 16;
 
@@ -153,6 +155,14 @@ namespace Rogue
                 for (int x = 0; x < level01.mapWidth; x++)
                 {
                     int tileId = level01.GetTileAt(x, y);
+                    if (tileId == 0)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        tileId -= 1;
+                    }
                     Rectangle destRect = new Rectangle(x * tileSize, y * tileSize, tileSize, tileSize);
                     Color Color = (tileId == 1) ? Raylib.LIGHTGRAY : Raylib.GRAY;
                     Raylib.DrawRectangleRec(destRect, Color);
@@ -249,11 +259,16 @@ namespace Rogue
                 {
                     Console.WriteLine("Vihollinen");
                 }
+                if ((newX, newY) == (itemX, itemY))
+                {
+                    Console.WriteLine("Esine");
+                }
             }
         }
 
         private bool IsTileWalkable(int x, int y)
         {
+            FloorTileNumbers = new List<int> { 8, 9, 12, 18, 19};
             return level01.GetTileAt(x, y) == 12;
         }
 
@@ -276,7 +291,7 @@ namespace Rogue
                 {
                     enemyX = random.Next(0, level01.mapWidth);
                     enemyY = random.Next(0, level01.MapHeight);
-                } while (level01.GetTileAt(enemyX, enemyY) != 12);
+                } while (false);//while (level01.GetTileAt(enemyX, enemyY) != 12);
                 enemyDrawing = true;
             }
 
@@ -307,7 +322,7 @@ namespace Rogue
                     {
                         itemX = random.Next(0, level01.mapWidth);
                         itemY = random.Next(0, level01.MapHeight);
-                    } while (level01.GetTileAt(itemX, itemY) != 12);
+                    } while (false);// while (level01.GetTileAt(itemX, itemY) != 11);
                     if (itemX != enemyX && itemY != enemyY)
                     {
                         break;

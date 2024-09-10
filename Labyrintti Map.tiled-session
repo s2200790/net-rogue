@@ -1,0 +1,107 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "RogueMap.tmj",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "C:/CWC/Labyrintti/Assets/Map/Dungeon_Tileset_Maze.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/CWC/Labyrintti/Assets/Map/Dungeon_Tileset_map.tsx": {
+            "scaleInDock": 2
+        },
+        "C:/CWC/Labyrintti/Assets/Map/Maze.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 310.66666666666663,
+                "y": 472.66666666666674
+            }
+        },
+        "C:/CWC/Labyrintti/Assets/Map/tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/CWC/Labyrintti/Assets/Map/wall-tiles-autotile.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "DungeonTile.tsx": {
+            "scaleInDock": 1
+        },
+        "DungeonTilemaze.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Dungeon_Tileset-Rogue.tsx": {
+            "scaleInDock": 1
+        },
+        "Dungeon_Tileset_Maze.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        },
+        "Dungeon_Tileset_map.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        },
+        "Maze.tmx": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 419,
+                "y": 399.5
+            }
+        },
+        "RogueMap.tmj": {
+            "scale": 2.5946875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 136.8180175840058,
+                "y": 160.13489100325185
+            }
+        },
+        "tileset.tsx": {
+            "scaleInDock": 4,
+            "scaleInEditor": 1
+        },
+        "wall-tiles-autotile.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "C:/CWC/Labyrintti/Assets/Map",
+    "map.height": 50,
+    "map.lastUsedFormat": "tmx",
+    "map.tileWidth": 36,
+    "map.width": 50,
+    "openFiles": [
+        "Maze.tmx",
+        "Dungeon_Tileset_map.tsx",
+        "wall-tiles-autotile.tsx",
+        "C:/CWC/Labyrintti/Assets/Map/Maze.tmx",
+        "RogueMap.tmj"
+    ],
+    "project": "Labyrintti Map.tiled-project",
+    "recentFiles": [
+        "Maze.tmx",
+        "Dungeon_Tileset_map.tsx",
+        "wall-tiles-autotile.tsx",
+        "C:/CWC/Labyrintti/Assets/Map/Maze.tmx",
+        "RogueMap.tmj",
+        "C:/CWC/Labyrintti/Assets/Map/wall-tiles-autotile.tsx",
+        "C:/CWC/Labyrintti/Assets/Map/tileset.tsx",
+        "tileset.tsx",
+        "Dungeon_Tileset_Maze.tsx",
+        "DungeonTilemaze.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

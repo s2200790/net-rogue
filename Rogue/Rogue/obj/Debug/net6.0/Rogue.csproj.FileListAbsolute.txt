@@ -31,3 +31,6 @@ C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\Map\Dungeon_Tileset-Rogue..t
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\Map\Dungeon_Tileset-Rogue.tsx
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\Map\Dungeon_Tileset.png
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\Map\RogueMap.tmj
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\TurboMapReader.dll
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\TurboMapReader.pdb
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\Map\NewRogueMap.tmj
