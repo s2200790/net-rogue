@@ -129,8 +129,8 @@ namespace Rogue
 
             Raylib.InitWindow(screen_width, screen_height, "Rogue");
             Raylib.SetWindowState(ConfigFlags.FLAG_WINDOW_RESIZABLE);
-            game_width = 16 * 16;
-            game_height = 14 * 16;
+            game_width = 22 * 21;
+            game_height = 17 * 19;
             Raylib.SetWindowMinSize(game_width, game_height);
             game_screen = Raylib.LoadRenderTexture(game_width, game_height);
             Raylib.SetTextureFilter(game_screen.texture, TextureFilter.TEXTURE_FILTER_POINT);
@@ -269,7 +269,7 @@ namespace Rogue
         private bool IsTileWalkable(int x, int y)
         {
             FloorTileNumbers = new List<int> { 8, 9, 12, 18, 19};
-            return level01.GetTileAt(x, y) == 12;
+            return level01.GetTileAt(x, y) == 8;
         }
 
         private void GameLoop()
@@ -291,7 +291,7 @@ namespace Rogue
                 {
                     enemyX = random.Next(0, level01.mapWidth);
                     enemyY = random.Next(0, level01.MapHeight);
-                } while (false);//while (level01.GetTileAt(enemyX, enemyY) != 12);
+                } while (level01.GetTileAt(enemyX, enemyY) != 8);
                 enemyDrawing = true;
             }
 
@@ -322,7 +322,7 @@ namespace Rogue
                     {
                         itemX = random.Next(0, level01.mapWidth);
                         itemY = random.Next(0, level01.MapHeight);
-                    } while (false);// while (level01.GetTileAt(itemX, itemY) != 11);
+                    } while (level01.GetTileAt(itemX, itemY) != 8);
                     if (itemX != enemyX && itemY != enemyY)
                     {
                         break;

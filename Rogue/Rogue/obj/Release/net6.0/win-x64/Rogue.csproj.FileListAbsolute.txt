@@ -237,7 +237,6 @@ C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x64\dbgshim.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x64\hostfxr.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x64\hostpolicy.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x64\mscordaccore.dll
-C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x64\mscordaccore_amd64_amd64_6.0.1322.58009.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x64\mscordbi.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x64\mscorrc.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x64\msquic.dll
@@ -249,9 +248,11 @@ C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\Rogue.GeneratedMSB
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\Rogue.AssemblyInfoInputs.cache
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\Rogue.AssemblyInfo.cs
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\Rogue.csproj.CoreCompileInputs.cache
-C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\Rogue.csproj.CopyComplete
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\Rogue.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\refint\Rogue.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\Rogue.pdb
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\Rogue.genruntimeconfig.cache
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\ref\Rogue.dll
+C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\win-x64\mscordaccore_amd64_amd64_6.0.3324.36610.dll
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\Rogue.sourcelink.json
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\win-x64\Rogue.csproj.Up2Date

@@ -15,7 +15,6 @@ C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.genruntimeconfig.cac
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\ref\Rogue.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\mapfile.json
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\Newtonsoft.Json.dll
-C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.csproj.CopyComplete
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\Images\DungeonTile.png
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\Map\DungeonTile.png
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\Map\DungeonTile.tsj
@@ -34,3 +33,5 @@ C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\runtimes\win-x64\native\ra
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\Map\NewRogueMap.tmj
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\TurboMapReader.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Release\net6.0\TurboMapReader.pdb
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.sourcelink.json
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Release\net6.0\Rogue.csproj.Up2Date

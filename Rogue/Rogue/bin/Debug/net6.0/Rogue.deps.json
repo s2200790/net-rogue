@@ -313,7 +313,10 @@
           "System.Xml.XmlSerializer": "4.3.0"
         },
         "runtime": {
-          "TurboMapReader.dll": {}
+          "TurboMapReader.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

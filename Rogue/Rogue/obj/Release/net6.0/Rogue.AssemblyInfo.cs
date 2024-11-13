@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rogue")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b9ed080cf0264bf8e6f639f05d7e1e7aa6b3665")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rogue")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rogue")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -15,7 +15,6 @@ C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Debug\net6.0\Rogue.genruntimeconfig.cache
 C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Debug\net6.0\ref\Rogue.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\mapfile.json
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Debug\net6.0\Rogue.csproj.CopyComplete
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\CommunityToolkit.HighPerformance.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\Raylib-CSharp-Vinculum.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\runtimes\linux-x64\native\libraylib.so
@@ -34,3 +33,5 @@ C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\Map\RogueMap.tmj
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\TurboMapReader.dll
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\TurboMapReader.pdb
 C:\Tiedostot\net-rogue\Rogue\Rogue\bin\Debug\net6.0\Map\NewRogueMap.tmj
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Debug\net6.0\Rogue.sourcelink.json
+C:\Tiedostot\net-rogue\Rogue\Rogue\obj\Debug\net6.0\Rogue.csproj.Up2Date
