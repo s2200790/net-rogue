@@ -113,7 +113,8 @@
               "RelativeToolTip": "Rogue\\Map.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAA2wBcAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T07:35:44.401Z"
+              "WhenOpened": "2024-03-06T07:35:44.401Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -162,7 +163,8 @@
               "RelativeToolTip": "Rogue\\MapLayer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T09:16:25.659Z"
+              "WhenOpened": "2024-05-14T09:16:25.659Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
