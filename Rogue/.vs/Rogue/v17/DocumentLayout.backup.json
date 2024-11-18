@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "Rogue\\Game.cs",
               "ToolTip": "C:\\Tiedostot\\net-rogue\\Rogue\\Rogue\\Game.cs",
               "RelativeToolTip": "Rogue\\Game.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAUwIMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAUwIQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-04T08:17:54.975Z",
               "IsPinned": true,
@@ -76,8 +76,7 @@
               "RelativeToolTip": "Rogue\\Map\\NewRogueMap.tmj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-13T09:09:00.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T09:09:00.924Z"
             },
             {
               "$type": "Document",
@@ -125,8 +124,7 @@
               "RelativeToolTip": "Rogue\\MapLoader.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAAADIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T10:54:24.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-05T10:54:24.046Z"
             },
             {
               "$type": "Document",

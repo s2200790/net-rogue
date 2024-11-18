@@ -129,8 +129,8 @@ namespace Rogue
 
             Raylib.InitWindow(screen_width, screen_height, "Rogue");
             Raylib.SetWindowState(ConfigFlags.FLAG_WINDOW_RESIZABLE);
-            game_width = 22 * 21;
-            game_height = 17 * 19;
+            game_width = 22 * 22 - 4;
+            game_height = 17 * 19 - 4;
             Raylib.SetWindowMinSize(game_width, game_height);
             game_screen = Raylib.LoadRenderTexture(game_width, game_height);
             Raylib.SetTextureFilter(game_screen.texture, TextureFilter.TEXTURE_FILTER_POINT);
