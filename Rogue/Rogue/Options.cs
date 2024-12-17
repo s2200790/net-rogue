@@ -23,7 +23,6 @@ namespace Rogue
 
             if (creator.LabelButton("Back"))
             {
-                Game.currentGameState = GameState.PlayerMenu;
                 BackButtonPressedEvent.Invoke(this, EventArgs.Empty);
 
             }

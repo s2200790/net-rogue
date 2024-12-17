@@ -59,7 +59,8 @@ namespace Rogue
             MainMenu,
             GameLoop,
             PlayerMenu,
-            Options
+            Options,
+            Pause
         }
         GameState currentGameState;
         public static List<int> FloorTileNumbers;
@@ -153,7 +154,9 @@ namespace Rogue
         private void Init()
         {
             myOptions = new Options();
-
+            myPause = new Pause();
+            myOptions.BackButtonPressedEvent += this.OnOptionsBackButtonPressed;
+            myPause.BackButtonPressedEvent += this.OnPauseBackButtonPressed;
             currentGameState = GameState.MainMenu;
 
             MapLoader loader = new MapLoader();
@@ -171,7 +174,14 @@ namespace Rogue
             hahmoAtlas = Raylib.LoadTexture("Images/DungeonTile.png");
             
         }
-
+        void OnOptionsBackButtonPressed(object sender, EventArgs args)
+        {
+            currentGameState = GameState.MainMenu;
+        }
+        void OnPauseBackButtonPressed(object sender, EventArgs args)
+        {
+            currentGameState = GameState.GameLoop;
+        }
         private void DrawGameToTexture()
         {
             Raylib.BeginTextureMode(game_screen);
@@ -274,6 +284,11 @@ namespace Rogue
                 MovePlayer(-1, 0);
             else if (Raylib.IsKeyPressed(KeyboardKey.KEY_RIGHT))
                 MovePlayer(1, 0);
+
+            if (Raylib.IsKeyPressed(KeyboardKey.KEY_P))
+            {
+                currentGameState = GameState.Pause;
+            }
         }
 
         private void MovePlayer(int moveX, int moveY)
@@ -324,6 +339,9 @@ namespace Rogue
                         break;
                     case GameState.Options:
                         myOptions.DrawMenu();
+                        break;
+                    case GameState.Pause:
+                        myPause.DrawMenu();
                         break;
 
                 }

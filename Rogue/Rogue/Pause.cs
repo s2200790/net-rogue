@@ -12,7 +12,7 @@ namespace Rogue
     internal class Pause
     {
         public event EventHandler BackButtonPressedEvent;
-        void DrawMenu()
+        public void DrawMenu()
         {
             Raylib.BeginDrawing();
             Raylib.ClearBackground(Raylib.BLACK);
@@ -24,7 +24,6 @@ namespace Rogue
 
             if (creator.LabelButton("Back"))
             {
-                Game.currentGameState = GameState.PlayerMenu;
                 BackButtonPressedEvent.Invoke(this, EventArgs.Empty);
             }
 
