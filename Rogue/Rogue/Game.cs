@@ -54,7 +54,7 @@ namespace Rogue
 
         Options  myOptions;
         Pause myPause;
-        enum GameState
+        public enum GameState
         {
             MainMenu,
             GameLoop,
