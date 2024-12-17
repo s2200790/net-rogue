@@ -12,6 +12,7 @@ namespace Rogue
     internal class Pause
     {
         public event EventHandler BackButtonPressedEvent;
+        public event EventHandler OptionsButtonPressedEvent;
         public void DrawMenu()
         {
             Raylib.BeginDrawing();
@@ -20,17 +21,20 @@ namespace Rogue
             int elementY = 40;
             int menuWidth = Raylib.GetScreenWidth() * 4;
             MenuCreator creator = new MenuCreator(elementX, elementY, 20, menuWidth);
-            creator.Label("Options");
+            creator.Label("Pause");
 
             if (creator.LabelButton("Back"))
             {
                 BackButtonPressedEvent.Invoke(this, EventArgs.Empty);
             }
+            if (creator.LabelButton("Options"))
+            {
+                OptionsButtonPressedEvent.Invoke(this, EventArgs.Empty);
+            }
 
             elementY += 30;
             if (creator.LabelButton("Quit"))
             {
-                Raylib.CloseWindow();
             }
             Raylib.EndDrawing();
         }

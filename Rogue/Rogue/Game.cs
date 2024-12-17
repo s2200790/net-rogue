@@ -62,7 +62,8 @@ namespace Rogue
             Options,
             Pause
         }
-        GameState currentGameState;
+
+        Stack<GameState> stateStack = new Stack<GameState>();
         public static List<int> FloorTileNumbers;
         private void CreatePlayer()
         {
@@ -157,7 +158,8 @@ namespace Rogue
             myPause = new Pause();
             myOptions.BackButtonPressedEvent += this.OnOptionsBackButtonPressed;
             myPause.BackButtonPressedEvent += this.OnPauseBackButtonPressed;
-            currentGameState = GameState.MainMenu;
+            myPause.OptionsButtonPressedEvent += this.OnPauseOptionsButtonPressed;
+            stateStack.Push(GameState.MainMenu);
 
             MapLoader loader = new MapLoader();
             level01 = loader.LoadMapFromTiledFile("Map/NewRogueMap.tmj");
@@ -176,11 +178,15 @@ namespace Rogue
         }
         void OnOptionsBackButtonPressed(object sender, EventArgs args)
         {
-            currentGameState = GameState.MainMenu;
+            stateStack.Pop();
         }
         void OnPauseBackButtonPressed(object sender, EventArgs args)
         {
-            currentGameState = GameState.GameLoop;
+            stateStack.Pop();
+        }
+        void OnPauseOptionsButtonPressed(object sender, EventArgs args)
+        {
+            stateStack.Push(GameState.Options);
         }
         private void DrawGameToTexture()
         {
@@ -287,7 +293,7 @@ namespace Rogue
 
             if (Raylib.IsKeyPressed(KeyboardKey.KEY_P))
             {
-                currentGameState = GameState.Pause;
+                stateStack.Push(GameState.Pause);
             }
         }
 
@@ -324,7 +330,7 @@ namespace Rogue
         {
                 while (!Raylib.WindowShouldClose())
             {
-                switch (currentGameState)
+                switch (stateStack.Peek())
                 {
                     case GameState.MainMenu:
                         DrawMainMenu();
@@ -366,19 +372,18 @@ namespace Rogue
 
                 if (creator.LabelButton("Start"))
                 {
-                    currentGameState = GameState.PlayerMenu;
+                stateStack.Push(GameState.PlayerMenu);
 
                 }
                 if (creator.LabelButton("Options"))
                 {
-                    currentGameState = GameState.Options;
+                stateStack.Push(GameState.Options);
 
                 }
 
             elementY += 30;
                 if(creator.LabelButton("Quit"))
                 {
-                    Raylib.CloseWindow();
                 }
             Raylib.EndDrawing();
         }
@@ -509,7 +514,7 @@ namespace Rogue
                 if (playerNameEntry.ToString != null)
                 {
                     player = new PlayerCharacter(playerNameEntry.ToString(),Enum.Parse<Species>(classChoices.GetSelected()),Enum.Parse<Role>(roleChoices.GetSelected()));
-                    currentGameState = GameState.GameLoop;
+                    stateStack.Push(GameState.GameLoop);
                 }
             }
 

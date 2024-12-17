@@ -27,10 +27,10 @@ namespace Rogue
 
             }
 
+
             elementY += 30;
             if (creator.LabelButton("Quit"))
             {
-                Raylib.CloseWindow();
             }
             Raylib.EndDrawing();
         }
