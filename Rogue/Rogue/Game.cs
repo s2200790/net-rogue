@@ -10,12 +10,30 @@ using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 using ZeroElectric.Vinculum;
+using RayGuiCreator;
+using System.Xml.Linq;
 
 
 namespace Rogue
 {
     internal class Game
     {
+        // List of possible class choices.
+        MultipleChoiceEntry classChoices = new MultipleChoiceEntry(
+        new string[] {"Duck" ,"Mongoose", "Elf" });
+
+        MultipleChoiceEntry roleChoices = new MultipleChoiceEntry(
+        new string[] { "Cook", "Smith", "Rogue" });
+
+        // Volume value is modified by the volume slider
+        float volume = 1.0f;
+
+        // Textbox data for player's name
+        TextBoxEntry playerNameEntry = new TextBoxEntry(15);
+
+        // Is the spinner active or not. This is changed by the MenuCreator
+        bool spinnerEditActive = false;
+
         Texture atlas;
         Texture hahmoAtlas;
         private PlayerCharacter player;
@@ -34,6 +52,16 @@ namespace Rogue
         int itemX = 0;
         int itemY = 0;
 
+        Options  myOptions;
+        Pause myPause;
+        enum GameState
+        {
+            MainMenu,
+            GameLoop,
+            PlayerMenu,
+            Options
+        }
+        GameState currentGameState;
         public static List<int> FloorTileNumbers;
         private void CreatePlayer()
         {
@@ -116,14 +144,18 @@ namespace Rogue
 
         public void Run()
         {
-            CreatePlayer();
             Init();
+            
             GameLoop();
             Raylib.UnloadRenderTexture(game_screen);
         }
 
         private void Init()
         {
+            myOptions = new Options();
+
+            currentGameState = GameState.MainMenu;
+
             MapLoader loader = new MapLoader();
             level01 = loader.LoadMapFromTiledFile("Map/NewRogueMap.tmj");
 
@@ -262,6 +294,7 @@ namespace Rogue
                 if ((newX, newY) == (itemX, itemY))
                 {
                     Console.WriteLine("Esine");
+                    itemDrawing = false;
                 }
             }
         }
@@ -272,16 +305,66 @@ namespace Rogue
             return level01.GetTileAt(x, y) == 8;
         }
 
-        private void GameLoop()
+        public void GameLoop()
         {
-            while (!Raylib.WindowShouldClose())
+                while (!Raylib.WindowShouldClose())
             {
-                UpdateGame();
-                DrawGameToTexture();
+                switch (currentGameState)
+                {
+                    case GameState.MainMenu:
+                        DrawMainMenu();
+                        break;
+
+                    case GameState.GameLoop:
+                        UpdateGame();
+                        DrawGameToTexture();
+                        break;
+                    case GameState.PlayerMenu:
+                        ShowPlayerMenu();
+                        break;
+                    case GameState.Options:
+                        myOptions.DrawMenu();
+                        break;
+
+                }
+
+                //UpdateGame();
+                //DrawGameToTexture();
             }
 
             Raylib.CloseWindow();
         }
+
+        private void DrawMainMenu()
+        {
+            Raylib.BeginDrawing();
+            Raylib.ClearBackground(Raylib.BLACK);
+            int elementX = 40;
+            int elementY = 40;
+            int menuWidth = Raylib.GetScreenWidth() * 4;
+            MenuCreator creator = new MenuCreator(elementX, elementY, 20, menuWidth );
+            creator.Label("Rogue");
+            creator.Label("Controls by Arrows");
+
+                if (creator.LabelButton("Start"))
+                {
+                    currentGameState = GameState.PlayerMenu;
+
+                }
+                if (creator.LabelButton("Options"))
+                {
+                    currentGameState = GameState.Options;
+
+                }
+
+            elementY += 30;
+                if(creator.LabelButton("Quit"))
+                {
+                    Raylib.CloseWindow();
+                }
+            Raylib.EndDrawing();
+        }
+
         private void DrawEnemy()
         {
             Random random = new Random();
@@ -346,6 +429,83 @@ namespace Rogue
 
             Rectangle ItemSpriteRect = new Rectangle(ItemImagePixelX, ItemImagePixelY, ItemTileSizeL, ItemTileSizeK);
             Raylib.DrawTextureRec(atlas, ItemSpriteRect, new Vector2(itemX * tileSize, itemY * tileSize), Raylib.WHITE);
+        }
+        public void ShowPlayerMenu()
+        {
+                Raylib.BeginDrawing();
+
+                Raylib.ClearBackground(MenuCreator.GetBackgroundColor());
+
+                DrawPlayerMenu();
+
+                Raylib.EndDrawing();
+        }
+        public void Print()
+        {
+            Console.WriteLine(" Menu values: ");
+            Console.WriteLine(
+            $"Volume: {volume}\n" +
+            $"Player name: \"{playerNameEntry}\"\n" +
+            $"Player class {classChoices.GetIndex()}: {classChoices.GetSelected()}"
+            );
+        }
+
+        private void DrawPlayerMenu()
+        {
+            int width = Raylib.GetScreenWidth() / 2;
+            // Fit 22 rows on the screen
+            int rows = 22;
+            int rowHeight = Raylib.GetScreenHeight() / rows;
+            // Center the menu horizontally
+            int x = (Raylib.GetScreenWidth() / 2) - (width / 2);
+            // Center the menu vertically
+            int y = (Raylib.GetScreenHeight() - (rowHeight * rows)) / 2;
+            // 3 pixels between rows, text 3 pixels smaller than row height
+            MenuCreator c = new MenuCreator(x, y, rowHeight, width, 3, -3);
+            c.Label("Main menu");
+
+            c.Label("Player name");
+            c.TextBox(playerNameEntry);
+
+            if (c.Button("Honk!"))
+            {
+                Console.Write("Honk!");
+            }
+
+            c.Label("Character class");
+            c.DropDown(classChoices);
+
+            c.Label("Role class");
+            c.DropDown(roleChoices);
+
+            c.Label("Volume");
+            c.Slider("Quiet", "Max", ref volume, 0.0f, 1.0f);
+
+            if (c.LabelButton(">>Print values to console"))
+            {
+                Print();
+            }
+
+            if (c.Button("Start"))
+            {
+                if (playerNameEntry.ToString != null)
+                {
+                    player = new PlayerCharacter(playerNameEntry.ToString(),Enum.Parse<Species>(classChoices.GetSelected()),Enum.Parse<Role>(roleChoices.GetSelected()));
+                    currentGameState = GameState.GameLoop;
+                }
+            }
+
+            // Draws open dropdowns over other menu items
+            int menuHeight = c.EndMenu();
+
+            // Draws a rectangle around the menu
+            int padding = 2;
+            Raylib.DrawRectangleLines(
+                x - padding,
+                y - padding,
+                width + padding * 2,
+                menuHeight + padding * 2,
+                MenuCreator.GetLineColor());
         }
     }
 }
