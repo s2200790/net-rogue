@@ -388,7 +388,7 @@ namespace Rogue
             Raylib.EndDrawing();
         }
 
-        private void DrawEnemy()
+        public void DrawEnemy()
         {
             Random random = new Random();
             if (!enemyDrawing)
