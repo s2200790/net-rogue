@@ -1,0 +1,31 @@
+﻿<Window x:Class="EnemyEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Enemy Editor" Height="400" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Vihollislista -->
+        <ListBox x:Name="EnemyList" Grid.Column="0" Margin="10" SelectionChanged="EnemyList_SelectionChanged" />
+
+        <!-- Vihollisen tiedot -->
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="Name:" />
+            <TextBox x:Name="EnemyNameEntry" Margin="0,0,0,10" />
+
+            <TextBlock Text="SpriteId:" />
+            <TextBox x:Name="EnemySpriteIdEntry" Margin="0,0,0,10" />
+
+            <TextBlock Text="HitPoints:" />
+            <TextBox x:Name="EnemyHitpointsEntry" Margin="0,0,0,10" />
+
+            <Button Content="Add to Enemies" Click="AddEnemyToList" />
+            <Button Content="Save to JSON" Click="SaveEnemiesToJSON" Margin="0,10,0,0" />
+
+            <TextBlock x:Name="ErrorLabel" Foreground="Red" Margin="0,10,0,0" />
+        </StackPanel>
+    </Grid>
+</Window>

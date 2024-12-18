@@ -390,6 +390,7 @@ namespace Rogue
 
         public void DrawEnemy()
         {
+
             Random random = new Random();
             if (!enemyDrawing)
             {
@@ -417,6 +418,7 @@ namespace Rogue
             Rectangle EnemySpriteRect = new Rectangle(EnemyImagePixelX, EnemyImagePixelY + 2, EnemyTileSizeL, EnemyTileSizeK - 5);
             Raylib.DrawTextureRec(hahmoAtlas, EnemySpriteRect, new Vector2(enemyX * tileSize - 2, enemyY * tileSize - 8), Raylib.WHITE);
         }
+
         private void DrawItem()
         {
             Random random = new Random();
